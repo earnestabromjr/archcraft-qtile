@@ -32,8 +32,8 @@ from libqtile import hook
 ## Startup ------------------------------
 @hook.subscribe.startup_once
 def autostart():
-    home = os.path.expanduser('~')
-    subprocess.Popen([home + '/.config/qtile/scripts/qtile_autostart'])
+    home_auto = os.path.expanduser('~')
+    subprocess.Popen([home_auto + '/.config/qtile/scripts/qtile_autostart'])
 
 ## Key Bindings ------------------------------
 
